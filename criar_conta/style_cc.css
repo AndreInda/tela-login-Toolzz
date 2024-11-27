@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.containercc{
+    width: 90%;
+    height: 90vh;
+    display: flex;
+
+}
+                                /*      videos          */
+.frame-video{
+width: 50%;
+display: flex;
+flex: 1 1 0;
+margin: 0;
+justify-content: center;
+align-items: center;
+
+}
+
+.gpc-b {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.gpc-b_sobreposicao {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para garantir que o vídeo preencha completamente o contêiner */
+}
+/*                      fim video                   */
+.form{
+width: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 4.5rem;
+}
+
+.frame-1527cc{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.frame-1527cc h5 a{
+    text-decoration: none;
+color: rgb(9, 139, 139);
+}
+.logo{
+margin-bottom: 3rem;
+display: flex;
+justify-content: space-between;
+}
+
+/*inicio do formulario de cadastro para novos usuarios*/
+
+.input-group{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 1rem 0;
+/*gap: 8px;*/
+}
+
+.input-box{
+display: flex;
+flex-direction: column;
+margin-bottom: 1.1rem;
+}
+
+.input-box input{
+margin: 0.6rem 0;
+height: 28px;
+padding: 0.8rem 1.2rem;
+border-radius: 8px;
+}
+
+/*.stakgroup{
+display: flex;
+justify-content: space-between;
+margin-top: 0.62rem;
+padding: 0 0.5rem;
+}*/
+
+.stackinput{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 1rem;
+}
+
+.stack-input{
+display: flex;
+align-items: center;
+padding: 0.5rem;
+}
+.stack-input input{
+    margin-right: 0.35rem;
+}
+
+.enviar button{
+width: 100%;
+margin-top: 2.5rem;
+height: 28px;
+border-radius: 8px;
+cursor: pointer;
+opacity: 0px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+color: #fff;
+background: var(--Brand-Primary-Primary, rgba(7, 97, 226, 1));
+}
+
+.enviar button:hover{
+    background-color: rgb(36, 36, 250);
+}
+
+.enviar button a{
+color: #fff;
+text-decoration: none;
+font-weight: 500;
+}
+
+/* Responsiveness */
+@media (min-width: 768px) {
+    .containercc {
+        flex-direction: row;
+    }
+
+    .frame-video, .form {
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .containercc {
+        flex-direction: column;
+    }
+
+    .frame-video {
+        display: none;
+    }
+
+    .form {
+        width: 100%;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .form {
+        padding: 1rem;
+    }
+
+    .enviar button {
+        height: 24px;
+    }
+
+    .input-box input {
+        height: 24px;
+        padding: 0.6rem 1rem;
+    }
+}
+
+/* Adjustments for smartwatch-like small screens */
+@media (max-width: 320px) {
+    .form {
+        padding: 0.5rem;
+    }
+
+    .enviar button {
+        height: 20px;
+    }
+
+    .input-box input {
+        height: 20px;
+        padding: 0.4rem 0.8rem;
+    }
+}
